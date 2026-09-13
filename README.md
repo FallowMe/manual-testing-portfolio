@@ -21,13 +21,12 @@ Testing activities included:
 - Responsive testing
 - Test documentation
 
-#### Portfolio materials
+#### Portfolio Materials
 
-- Exploratory Testing Report
-- Testing Session Log
-- Accessibility Bug Reports
-- Functional Testing Checklist
-- Supporting evidence
+- [Exploratory Testing Report](exploratory-testing/todomvc-exploratory-testing.md)
+- [Accessibility Bug Reports](bug-reports/todomvc-accessibility-bugs.md)
+- [Functional Testing Checklist](checklists/todomvc-functional-checklist.md)
+- [Excel Testing Documentation](documents/TodoMVC_Manual_Testing.xlsx)
 
 ## Skills demonstrated
 
