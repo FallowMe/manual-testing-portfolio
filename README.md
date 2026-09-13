@@ -26,6 +26,7 @@ Testing activities included:
 - [Exploratory Testing Report](exploratory-testing/todomvc-exploratory-testing.md)
 - [Accessibility Bug Reports](bug-reports/todomvc-accessibility-bugs.md)
 - [Functional Testing Checklist](checklists/todomvc-functional-checklist.md)
+- [Testing Session Log](session-logs/todomvc-session-log.md)
 - [Excel Testing Documentation](documents/TodoMVC_Manual_Testing.xlsx)
 
 ## Skills demonstrated
