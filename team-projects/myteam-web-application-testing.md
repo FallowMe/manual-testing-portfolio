@@ -116,7 +116,7 @@ This gave me practical experience working in a development workflow where QA tes
 - Google Chrome
 - Chrome DevTools
 - Figma
-- Pixel Parallel
+- Pixel Perfect Pro
 - VS Code
 
 ## Team Collaboration
