@@ -27,6 +27,7 @@ Testing activities included:
 - [Accessibility Bug Reports](bug-reports/todomvc-accessibility-bugs.md)
 - [Functional Testing Checklist](checklists/todomvc-functional-checklist.md)
 - [Testing Session Log](session-logs/todomvc-session-log.md)
+- [Testing Evidence](evidence/README.md)
 - [Excel Testing Documentation](documents/TodoMVC_Manual_Testing.xlsx)
 
 ## Skills demonstrated
