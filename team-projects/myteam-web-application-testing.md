@@ -90,7 +90,7 @@ Testing included:
 
 Chrome DevTools was used to test specific viewport sizes.
 
-Pixel Parallel was also used to overlay design screenshots over the implemented website to identify visual differences more precisely.
+Pixel Perfect Pro was also used to overlay design screenshots over the implemented website to identify visual differences more precisely.
 
 ## Git and Branch Testing
 
