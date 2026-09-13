@@ -98,10 +98,12 @@ I used Git and GitHub as part of the QA workflow.
 
 Typical commands and actions included:
 
+- `git status`
 - `git fetch --prune`
 - `git branch -r`
 - `git branch -a`
 - `git switch`
+- `git switch --track origin/<branch-name>`
 - `git pull`
 
 Individual development branches were tested before changes were merged into the main project branch.
