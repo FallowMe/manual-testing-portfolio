@@ -127,6 +127,42 @@ During testing I communicated directly with developers about identified issues, 
 
 This project helped me practice not only finding bugs, but also deciding when an issue should be formally registered in Jira and when a small visual inconsistency could be communicated directly to the developer.
 
+## Project Evidence
+
+Selected screenshots from the testing process are included below.
+
+### Git Branch Testing
+
+[View Git branch testing screenshot](evidence/git-branch-testing.png)
+
+This screenshot shows the Git workflow used to test individual development branches, including checking remote branches, switching to the assigned branch and pulling the latest changes.
+
+### Responsive Testing – Tablet View
+
+[View responsive testing screenshot](evidence/responsive-tablet-testing-768x1024.png)
+
+This screenshot shows responsive testing performed in Chrome DevTools using a **768 × 1024** tablet viewport.
+
+The implementation was checked for layout, alignment, text positioning, content visibility and horizontal overflow.
+
+### Jira Bug Report
+
+[View Jira bug report example](evidence/jira-bug-report-k2-55.png)
+
+This screenshot shows an example of a defect reported in Jira during the project.
+
+The bug report includes:
+
+- clear issue summary;
+- description;
+- steps to reproduce;
+- expected result;
+- actual result;
+- environment details;
+- supporting screenshot.
+
+This demonstrates how confirmed issues were documented and communicated to developers during the team project.
+
 ## Key Takeaways
 
 This project provided practical experience with:
