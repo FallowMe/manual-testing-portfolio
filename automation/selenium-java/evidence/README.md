@@ -1,9 +1,8 @@
 # Automation evidence
 
-No execution evidence has been added yet.
+- [Validation summary — 2026-11-09](validation-summary.txt): compilation succeeded; live test execution was blocked during browser setup.
+- [Execution record](../docs/test-execution.md): environment, source fingerprint, results and limitations.
 
-After a verified run, add selected screenshots or report excerpts and link them from the execution record. Use descriptive filenames that reflect the actual run date.
+There are no passing application screenshots or verified application test reports yet. The summary is a selected, sanitized record rather than a raw report.
 
-Each item should identify the test/scenario, run date, environment and result. Review screenshots for credentials or personal data before publication.
-
-See [execution status](../docs/test-execution.md).
+After a successful browser run, add selected evidence with the scenario ID, date, tested commit, environment and actual result. Maven build output under `target/` remains ignored.

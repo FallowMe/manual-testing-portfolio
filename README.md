@@ -8,7 +8,7 @@ This portfolio presents my test documentation, defect reports, team testing expe
 
 | Project | Focus | Available materials |
 | --- | --- | --- |
-| [Selenium Java](automation/selenium-java/README.md) | UI automation learning: OpenCart and DemoQA | Project documentation, scenario catalogue and planned POM structure; Java source import pending |
+| [Selenium Java](automation/selenium-java/README.md) | UI automation learning: OpenCart and DemoQA | Java source, Maven configuration, POM page objects and 11 documented test scenarios |
 | [MyTeam](team-projects/myteam-web-application-testing.md) | Team-based functional, UI and responsive testing | QA case study, Jira defect reporting and testing evidence |
 | [TodoMVC](exploratory-testing/todomvc-exploratory-testing.md) | Individual manual and exploratory testing | Test checklist, bug reports, session log and evidence |
 
@@ -23,11 +23,11 @@ An ongoing educational project documenting my transition from manual testing to 
 | OpenCart | Positive and negative login scenarios; registration with unique test data |
 | DemoQA | Delayed visibility, enabled state, colour changes, progress bar completion/reset and mouse interactions |
 
-**Design focus:** Page Object Model (POM), PageFactory initialization, shared browser setup and cleanup, CSS/XPath locators, explicit waits and assertions.
+**Design:** Page Object Model (POM), PageFactory initialization, shared browser setup and cleanup, CSS/XPath locators, explicit waits and assertions.
 
-**Publication status:** documentation and source folder placeholders are available. Java source files and `pom.xml` are pending import; execution has not been verified in this repository.
+**Publication status:** Java source files and `pom.xml` are included. See the [execution record](automation/selenium-java/docs/test-execution.md) for the actual validation results and environment limitations.
 
-- [Project details and planned architecture](automation/selenium-java/README.md)
+- [Project details and architecture](automation/selenium-java/README.md)
 - [Scenario catalogue and expected results](automation/selenium-java/docs/test-scenarios.md)
 - [Execution status](automation/selenium-java/docs/test-execution.md)
 

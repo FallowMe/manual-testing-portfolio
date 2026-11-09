@@ -1,0 +1,19 @@
+Selenium Java portfolio validation — 2026-11-09
+Source-set SHA-256: 87bc2af43593861ec15e3bd075af0320dc3a59ad9b324e19d259c200b8775dfa
+
+Compile:
+  Compiling 13 source files with javac [debug release 21]
+  BUILD SUCCESS
+
+Live attempt 1 (default Selenium Manager):
+  Tests run: 11, Failures: 0, Errors: 11, Skipped: 0
+  NoSuchDriverException: driver metadata download unavailable.
+
+Live attempt 2 (explicit ChromeDriver 156.0.8078.80):
+  Tests run: 11, Failures: 0, Errors: 11, Skipped: 0
+  SessionNotCreatedException: Chrome instance exited.
+  Direct launch diagnostic: socket() failed: Operation not permitted (1).
+
+This is a selected, sanitized text summary, not a raw Surefire report.
+All live attempts stopped during browser setup. No application assertion
+was verified, and no passing UI test result is claimed.

@@ -1,7 +1,8 @@
-# Source import pending
+# opencart source files
 
-OpenCart page objects will include BasePage, HomePage, LoginPage, MyAccountPage and RegisterPage.
-
-This folder is prepared for the original learning code. No Java implementation is published here yet.
-
-See [planned source structure](https://github.com/FallowMe/manual-testing-portfolio/blob/main/automation/selenium-java/docs/project-structure.md).
+- [AccountSuccessPage.java](AccountSuccessPage.java) — Account-creation heading.
+- [BasePage.java](BasePage.java) — PageFactory setup and wait-aware click/type/text helpers.
+- [HomePage.java](HomePage.java) — My Account, Login and Register navigation.
+- [LoginPage.java](LoginPage.java) — Login fields, submit action and warning text.
+- [MyAccountPage.java](MyAccountPage.java) — Account heading and logout.
+- [RegisterPage.java](RegisterPage.java) — Registration fields, privacy checkbox and Continue.

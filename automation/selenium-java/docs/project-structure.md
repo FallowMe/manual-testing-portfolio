@@ -1,50 +1,45 @@
-# Planned source structure
+# Source structure and exercise origins
 
-## Published documentation and folder placeholders
+All Java files below are included under `src/test/java`; this is a test-only Maven project.
 
-The following paths exist in this repository. Source folders currently contain README placeholders only.
-
-| Existing path | Current contents |
+| Path | Responsibility |
 | --- | --- |
-| `README.md` | Project overview, tools, test scope and planned POM responsibilities |
-| `docs/` | Scenario catalogue, execution status and this structure plan |
-| `evidence/` | Evidence guidance; no execution evidence published |
-| `src/test/java/lt/fallowme/base/` | README placeholder for shared browser lifecycle |
-| `src/test/java/lt/fallowme/pages/opencart/` | README placeholder for OpenCart page objects |
-| `src/test/java/lt/fallowme/tests/opencart/` | README placeholder for OpenCart test classes |
-| `src/test/java/lt/fallowme/tests/demoqa/` | README placeholder for DemoQA test classes |
+| `pom.xml` | Java release, test dependencies and Maven plugins |
+| `src/test/java/lt/fallowme/base/TestBase.java` | Chrome lifecycle, headless configuration and explicit wait |
+| `src/test/java/lt/fallowme/pages/opencart/AccountSuccessPage.java` | Account-creation heading |
+| `src/test/java/lt/fallowme/pages/opencart/BasePage.java` | PageFactory setup and wait-aware click/type/text helpers |
+| `src/test/java/lt/fallowme/pages/opencart/HomePage.java` | My Account, Login and Register navigation |
+| `src/test/java/lt/fallowme/pages/opencart/LoginPage.java` | Login fields, submit action and warning text |
+| `src/test/java/lt/fallowme/pages/opencart/MyAccountPage.java` | Account heading and logout |
+| `src/test/java/lt/fallowme/pages/opencart/RegisterPage.java` | Registration fields, privacy checkbox and Continue |
+| `src/test/java/lt/fallowme/tests/demoqa/ButtonsTest.java` | Normal, double and context clicks with message assertions |
+| `src/test/java/lt/fallowme/tests/demoqa/DynamicPropertiesTest.java` | Enabled, visible and CSS colour checks |
+| `src/test/java/lt/fallowme/tests/demoqa/ProgressBarTest.java` | Completion and reset assertions |
+| `src/test/java/lt/fallowme/tests/opencart/LoginTest.java` | Three independent positive/negative login checks |
+| `src/test/java/lt/fallowme/tests/opencart/OpenCartTestBase.java` | OpenCart URL, synthetic test data and account setup |
+| `src/test/java/lt/fallowme/tests/opencart/RegisterTest.java` | Registration and success-heading assertion |
 
-## Planned implementation — pending import
+## Selected uploaded exercises
 
-None of the Java files or Maven configuration listed below is published here yet. They are planned import targets from the original learning project.
-
-| Relative path | Intended responsibility |
+| Uploaded project / exercise | Portfolio destination |
 | --- | --- |
-| pom.xml | Original dependency versions, Java configuration and test runner |
-| src/test/java/lt/fallowme/base/TestBase.java | Create a browser before each test and close it afterwards |
-| src/test/java/lt/fallowme/pages/opencart/BasePage.java | Shared page setup and PageFactory initialization |
-| src/test/java/lt/fallowme/pages/opencart/HomePage.java | My Account, Login and Register navigation |
-| src/test/java/lt/fallowme/pages/opencart/LoginPage.java | Login fields, submit action and warning access |
-| src/test/java/lt/fallowme/pages/opencart/MyAccountPage.java | Account page heading access |
-| src/test/java/lt/fallowme/pages/opencart/RegisterPage.java | Registration fields, privacy policy and Continue action |
-| src/test/java/lt/fallowme/tests/opencart/LoginTest.java | Positive and negative login tests |
-| src/test/java/lt/fallowme/tests/opencart/RegisterTest.java | Unique-email registration and success assertion |
-| src/test/java/lt/fallowme/tests/demoqa/ButtonsTest.java | Normal, double and context click assertions |
-| src/test/java/lt/fallowme/tests/demoqa/DynamicPropertiesTest.java | Enabled, visible and colour-change checks |
-| src/test/java/lt/fallowme/tests/demoqa/ProgressBarTest.java | Progress completion and reset checks |
+| `techin-vakaras-26-ruduo-pom`: page classes, `TestBase`, `LoginTest`, `RegisterTest` | OpenCart POM and test base |
+| `techin-vakaras-26-ruduo`: `hooks_06/HookTest` | Unregistered-email login scenario |
+| `actions_08/ActionsTest` | `ButtonsTest` |
+| `waiters_07/DemoqaProperties` | `DynamicPropertiesTest` |
+| `waiters_07/ExplicitTest` | `ProgressBarTest`, extended with reset verification |
 
-## Import and review checklist
+These are learning exercises refactored into a portfolio structure with AI assistance, rather than a verbatim archive import. Changes include package names, shared lifecycle, explicit waits, independent synthetic account setup, final CSS colour and reset assertions, and Maven test-engine/runner configuration.
 
-- [ ] Import the original pom.xml and confirm its JDK and dependency versions.
-- [ ] Import the original Java classes and update package declarations/imports to match the folders.
-- [ ] Keep shared browser lifecycle independent of each test application's URL.
-- [ ] Ensure each test closes its browser through the shared cleanup.
-- [ ] Confirm page objects and tests have matching methods and constructors.
-- [ ] Check positive and negative assertions, including registration completion.
-- [ ] Replace personal credentials with an appropriate test-data configuration.
-- [ ] Confirm Maven discovers the intended tests.
-- [ ] Run the tests and document actual results.
-- [ ] Update the scenario catalogue to match the published code.
+The source registration test already contained an account-creation assertion; it was retained. The source POM used Selenium 4.51.0 and JUnit API 6.1.3; the portfolio includes the full JUnit Jupiter dependency so Maven can execute tests.
 
-A runnable project should be claimed only after source/configuration import and verification.
+## Not selected
 
+- Early locator/search/Select exercises: mostly exploratory scripts, repeated setup and console output, with incomplete or brittle assertions.
+- The implicit-wait progress-bar duplicate: the explicit-wait version is clearer about the state being awaited.
+- The long product comparison flow: combines currency, cart, wishlist and comparison with fixed prices and positional product selection; it needs a separate redesign before publication.
+- `TomasScerbinskas`: a separate municipality/Java OOP exercise. Several methods still return placeholder values and its test contract depends on the bundled task JAR. It is outside this Selenium portfolio's scope.
+
+## Publication choices
+
+Only selected source and documentation are included. IntelliJ metadata, original account data, compiled output and the municipality task JAR are excluded. Current execution limitations are documented in [the execution record](test-execution.md).
