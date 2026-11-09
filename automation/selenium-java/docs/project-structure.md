@@ -1,6 +1,22 @@
 # Planned source structure
 
-The source directories are prepared with README files. The Java files and Maven configuration listed below are pending import from the original learning project.
+## Published documentation and folder placeholders
+
+The following paths exist in this repository. Source folders currently contain README placeholders only.
+
+| Existing path | Current contents |
+| --- | --- |
+| `README.md` | Project overview, tools, test scope and planned POM responsibilities |
+| `docs/` | Scenario catalogue, execution status and this structure plan |
+| `evidence/` | Evidence guidance; no execution evidence published |
+| `src/test/java/lt/fallowme/base/` | README placeholder for shared browser lifecycle |
+| `src/test/java/lt/fallowme/pages/opencart/` | README placeholder for OpenCart page objects |
+| `src/test/java/lt/fallowme/tests/opencart/` | README placeholder for OpenCart test classes |
+| `src/test/java/lt/fallowme/tests/demoqa/` | README placeholder for DemoQA test classes |
+
+## Planned implementation — pending import
+
+None of the Java files or Maven configuration listed below is published here yet. They are planned import targets from the original learning project.
 
 | Relative path | Intended responsibility |
 | --- | --- |
@@ -31,3 +47,4 @@ The source directories are prepared with README files. The Java files and Maven 
 - [ ] Update the scenario catalogue to match the published code.
 
 A runnable project should be claimed only after source/configuration import and verification.
+
