@@ -1,30 +1,39 @@
-# QA Portfolio — Manual & Automation Testing
+# QA Portfolio — Manual Testing & Selenium Java
 
-This repository contains selected manual software testing work and documentation of my ongoing Selenium Java automation practice completed during my Software Testing studies at TECHIN and practical QA training.
+I am studying Software Testing at TECHIN and building practical skills in manual testing and UI test automation with Java and Selenium WebDriver.
 
-The purpose of this portfolio is to demonstrate my approach to manual testing, defect reporting, responsive and UI testing, exploratory testing, accessibility checks and team-based QA workflows. I am also developing UI test automation skills with Java and Selenium WebDriver.
+This portfolio presents my test documentation, defect reports, team testing experience and ongoing automation learning. My goal is to start my career as a Junior QA Engineer / Software Tester.
 
-## Projects
+## Portfolio overview
 
-### 1. Selenium Java — UI Test Automation
+| Project | Focus | Available materials |
+| --- | --- | --- |
+| [Selenium Java](automation/selenium-java/README.md) | UI automation learning: OpenCart and DemoQA | Project documentation, scenario catalogue and planned POM structure; Java source import pending |
+| [MyTeam](team-projects/myteam-web-application-testing.md) | Team-based functional, UI and responsive testing | QA case study, Jira defect reporting and testing evidence |
+| [TodoMVC](exploratory-testing/todomvc-exploratory-testing.md) | Individual manual and exploratory testing | Test checklist, bug reports, session log and evidence |
 
-An educational UI test automation project developed during my Software Testing studies at TECHIN.
+## Selenium Java — UI Test Automation
 
-My learning practice covers OpenCart login and registration scenarios, Page Object Model, DemoQA dynamic elements and mouse interactions.
+An ongoing educational project documenting my transition from manual testing to browser automation.
 
-**Tools used in learning:** Java, Selenium WebDriver, JUnit Jupiter, Maven, ChromeDriver, IntelliJ IDEA, Git and GitHub.
+**Learning tools:** Java, Selenium WebDriver, JUnit Jupiter, Maven, ChromeDriver, IntelliJ IDEA, Git and GitHub.
 
-**Focus areas:** reusable browser setup, CSS and XPath locators, explicit waits and assertions.
+| Application | Learning scope |
+| --- | --- |
+| OpenCart | Positive and negative login scenarios; registration with unique test data |
+| DemoQA | Delayed visibility, enabled state, colour changes, progress bar completion/reset and mouse interactions |
 
-**Portfolio status:** project documentation and source folder structure are available. Java source files and Maven configuration have not yet been published here; no verified execution results are claimed.
+**Design focus:** Page Object Model (POM), PageFactory initialization, shared browser setup and cleanup, CSS/XPath locators, explicit waits and assertions.
 
-- [Project overview and next steps](automation/selenium-java/README.md)
-- [Test scenarios](automation/selenium-java/docs/test-scenarios.md)
+**Publication status:** documentation and source folder placeholders are available. Java source files and `pom.xml` are pending import; execution has not been verified in this repository.
+
+- [Project details and planned architecture](automation/selenium-java/README.md)
+- [Scenario catalogue and expected results](automation/selenium-java/docs/test-scenarios.md)
 - [Execution status](automation/selenium-java/docs/test-execution.md)
 
 ---
 
-### 2. MyTeam Web Application – Team Testing Project
+## MyTeam Web Application – Team Testing Project
 
 Team-based web application project completed during my Software Testing studies at TECHIN.
 
@@ -52,7 +61,7 @@ During the project I created **6 Jira bug reports** for confirmed issues and als
 
 ---
 
-### 3. TodoMVC – Ember.js
+## TodoMVC – Ember.js
 
 Manual and exploratory testing of the TodoMVC web application.
 
@@ -76,46 +85,14 @@ Testing activities included:
 - [Testing Evidence](evidence/README.md)
 - [Excel Testing Documentation](documents/TodoMVC_Manual_Testing.xlsx)
 
-## Skills Demonstrated
+## Skills and tools
 
-- Manual Testing
-- Exploratory Testing
-- Functional Testing
-- UI Testing
-- Responsive Testing
-- Bug Reporting
-- Retesting
-- Regression Testing
-- Accessibility Testing
-- Compatibility Testing
-- Test Documentation
-- Git branch-based QA workflow
-- Team collaboration
-
-## Automation Learning Focus
-
-- Java and Selenium WebDriver fundamentals
-- Page Object Model and PageFactory
-- JUnit assertions
-- Explicit waits for dynamic elements
-- Positive and negative login scenarios
-
-See the automation project for publication and verification status.
-
-## Tools
-
-- Jira
-- Git
-- GitHub
-- Google Chrome
-- Mozilla Firefox
-- Chrome DevTools
-- Figma
-- Pixel Perfect Pro
-- VS Code
-- Windows 10
-
-Automation learning tools: Java, Selenium WebDriver, JUnit Jupiter, Maven, ChromeDriver and IntelliJ IDEA.
+| Area | Skills and tools |
+| --- | --- |
+| Manual testing | Functional, exploratory, UI, responsive, accessibility and compatibility testing |
+| QA documentation | Bug reports, checklists, session logs, retesting and regression checks |
+| Automation learning | Java, Selenium WebDriver, JUnit Jupiter, Maven, POM and explicit waits |
+| Tools and collaboration | Jira, Git/GitHub, Chrome DevTools, Figma, Pixel Perfect Pro and team QA workflows |
 
 ## About
 
