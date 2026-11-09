@@ -1,89 +1,67 @@
-# Selenium Java — UI Test Automation
+# Selenium Java — UI Test Automation Learning Project
 
-This project documents my progress from manual software testing to UI test automation using Java and Selenium WebDriver during my Software Testing studies at TECHIN.
+This project documents my UI test automation learning during Software Testing studies at TECHIN.
 
-OpenCart practice focuses on authentication, registration and Page Object Model structure. DemoQA practice focuses on dynamic elements, progress bars and mouse interactions.
+The goal is to turn test scenarios into browser checks with clear expected results, while practising maintainable test organization with Java, Selenium WebDriver and Page Object Model (POM).
 
 ## Current status
 
-This directory contains project documentation and a prepared source folder structure. The original Java source files and `pom.xml` have not yet been published here. This is not yet a runnable Maven project.
+Project documentation and source folder placeholders are published. Java source files and `pom.xml` are pending import from the original learning project.
 
-The scenario catalogue describes learning exercises and their intended checks. It does not certify that these tests exist or pass in this repository.
+This directory is not yet a runnable Maven project. No verified execution results are available here.
 
 ## Tools used in learning
 
 | Tool | Purpose |
 | --- | --- |
-| Java | Test and page object code |
-| Selenium WebDriver / ChromeDriver | Browser automation in Chrome |
+| Java | Test and page object implementation |
+| Selenium WebDriver / ChromeDriver | Browser automation |
 | JUnit Jupiter | Test lifecycle and assertions |
 | Maven | Dependency management and test execution |
-| IntelliJ IDEA | Java development and test execution |
-| Git / GitHub | Version control and portfolio |
-| Chrome DevTools | Inspecting elements and selecting locators |
+| IntelliJ IDEA | Development and local test execution |
+| Git / GitHub | Version control and portfolio presentation |
 
-Exact dependency and JDK versions will be documented from the original Maven project when its configuration is added.
+JDK and dependency versions will be documented after reviewing the original `pom.xml`.
 
-## Test applications
+## Documented test scope
 
-- OpenCart: https://opencart.abstracta.us/
-- DemoQA buttons: https://demoqa.com/buttons
-- DemoQA dynamic properties: https://demoqa.com/dynamic-properties
-- DemoQA progress bar: https://demoqa.com/progress-bar
+| Application | Scenarios | Intended checks |
+| --- | --- | --- |
+| OpenCart | Valid and invalid login | Account access after valid login; warning and denied access after invalid login |
+| OpenCart | Registration with a unique email | Account creation confirmation |
+| DemoQA | Dynamic properties | Delayed visibility, enabled state and final CSS colour |
+| DemoQA | Progress bar | Completion at 100% and reset to 0% |
+| DemoQA | Mouse interactions | Messages after normal, double and context clicks |
 
-These public demo applications are external dependencies. Availability and page changes may affect future test runs.
+These are documented learning scenarios. Implementation and execution status must be confirmed after source import.
 
-## Project structure
+## Planned Page Object Model structure
 
-| Path | Role and publication status |
+| Component | Responsibility |
 | --- | --- |
-| `README.md` | Project overview |
-| `docs/test-scenarios.md` | Scenario catalogue and intended assertions |
-| `docs/test-execution.md` | Verification status and future execution record format |
-| `docs/project-structure.md` | Planned Java files and import checklist |
-| `src/test/java/lt/fallowme/base/` | Prepared folder for shared browser lifecycle |
-| `src/test/java/lt/fallowme/pages/opencart/` | Prepared folder for OpenCart page objects |
-| `src/test/java/lt/fallowme/tests/opencart/` | Prepared folder for login and registration tests |
-| `src/test/java/lt/fallowme/tests/demoqa/` | Prepared folder for dynamic element and mouse interaction tests |
-| `evidence/` | Guidance for adding actual execution evidence |
-| `pom.xml` | Pending import from the original project |
+| `TestBase` | Shared browser creation and cleanup |
+| `BasePage` | Shared page initialization using PageFactory |
+| OpenCart page objects | Page locators and actions for navigation, login and registration |
+| OpenCart tests | Scenario steps and assertions |
+| DemoQA tests | Dynamic element, progress bar and mouse interaction checks |
 
-## Design approach
+Page objects will represent page actions; test classes will verify expected outcomes. Explicit waits will target the state required by each scenario.
 
-- Keep browser creation and cleanup in `TestBase`.
-- Keep OpenCart locators and page actions in page objects.
-- Use `BasePage` for shared page setup with PageFactory.
-- Keep assertions in tests so each scenario has a clear expected result.
-- Use explicit waits for the state being tested, such as visibility or clickability.
-- Keep test data separate from page actions; avoid publishing personal credentials.
+See the [planned files and import checklist](docs/project-structure.md).
 
-These describe the intended organization of the existing learning work. Implementation will be reviewed after source import.
+## Execution
 
-## Running the tests
+Tests cannot yet be run from this directory. Run instructions will be finalized after importing and checking the Java source files, Maven configuration and environment requirements.
 
-Tests cannot be run from this directory yet. First add and review the original Java files and `pom.xml`, then confirm the JDK, dependencies and test discovery.
-
-After that verification, the intended command from this directory is:
-
-```bash
-mvn test
-```
-
-Chrome and the required JDK/Maven environment must be available. Document any actual driver setup or test account requirements from the imported code.
+See [execution status](docs/test-execution.md).
 
 ## Documentation
 
-- [Scenario catalogue](docs/test-scenarios.md)
+- [Test scenarios and expected assertions](docs/test-scenarios.md)
+- [Planned source structure](docs/project-structure.md)
 - [Execution status](docs/test-execution.md)
-- [Planned source structure and import checklist](docs/project-structure.md)
 - [Evidence guidance](evidence/README.md)
 
-## Next steps
+## Next milestone
 
-1. Import the original Maven configuration and learning code.
-2. Review page objects, browser cleanup, waits and assertions.
-3. Check that registration verifies account creation after submitting the form.
-4. Run the imported tests and record the environment and actual results.
-5. Add selected evidence and update each scenario's publication status.
-
-This is an ongoing educational project.
+Publish and review the original Maven configuration and Java classes, verify test discovery, then record an actual run with its environment, results and selected evidence.
